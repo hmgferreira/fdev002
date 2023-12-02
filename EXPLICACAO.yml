@@ -1,0 +1,26 @@
+REQUISIÇÃO - HTTP E ALGUM VERBO (GET, POST. PUT, DELETE, HEAD, OPTIONS)
+REQUEST - RESPONSE - HEADERS CABELALHOS
+
+HTTP
+métodos - verbos HTTP
+
+GET - LISTAR INFORMACOES
+POST - CRIAR
+PUT - ATUALIZAR
+DELETE - DELETAR
+
+RECURSOS - nomes dos endpoints ou rotas
+
+GET - localhost:8000/usuarios LISTAND usuarios
+GET - localhost:8000/usuarios/id EXIBINDO UM usuario
+POST - /usuarios CRIANDO UM usuarios
+PUT - /usuarios/id ATUALIZANDO UM usuarios
+DELETE - /usuarios/id ATUALIZANDO UM usuarios
+
+
+
+GET - localhost:8000/produtos LISTAND produtos
+GET - localhost:8000/produtos/id EXIBINDO UM produto
+POST - /produtos CRIANDO UM produtos
+PUT - /produtos/id ATUALIZANDO UM produtos
+DELETE - /produtos/id ATUALIZANDO UM produtos
