@@ -2,6 +2,14 @@ import Conexao from '../config/Conexao.js';
 
 class UsuariosModel {
 
+    async login(login, senha) {
+        const con = new Conexao();
+        const sql = "SELECT * FROM usuarios WHERE login = ? AND senha = ?";
+        const dados = [login, senha];
+        const resultados = await con.query(sql, dados);
+        return resultados;
+    }
+
     async findAll() {
         const con = new Conexao();
         const sql = "SELECT * FROM usuarios";
