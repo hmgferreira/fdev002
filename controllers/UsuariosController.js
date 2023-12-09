@@ -28,7 +28,10 @@ class UsuariosController {
 
         async findAll(request, response) {
             const model = new UsuariosModel();
-            const data = await model.findAll();
+            const page = request.query.page;
+            const pesquisa = request.query.pesquisa;
+
+            const data = await model.findAll(page, pesquisa);
             return response.json(data);
         }
 
