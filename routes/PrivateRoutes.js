@@ -2,6 +2,7 @@ import express from 'express'
 import jwt from 'jsonwebtoken';
 import UsuariosRoutes from './UsuariosRoutes.js';
 import ProdutosRoutes from './ProdutosRoutes.js';
+import DespesasRoutes from './DespesasRoutes.js';
 // RELACAO DE ROTAS PRIVADAS
 const PrivateRoutes = express.Router();
 
@@ -28,5 +29,6 @@ PrivateRoutes.use(function(request, response, next){
 
 PrivateRoutes.use(UsuariosRoutes);
 PrivateRoutes.use(ProdutosRoutes);
+PrivateRoutes.use(DespesasRoutes);
 
 export default PrivateRoutes;
