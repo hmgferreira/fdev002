@@ -18,6 +18,6 @@ app.use(PublicRoutes);
 // ABAIXO SERÃO AS ROTAS PRIVADAS MIDDLEARE
 app.use(PrivateRoutes);
 
-app.listen(80, () => {
+app.listen(3000, () => {
     console.log("Servidor executando");
 })
