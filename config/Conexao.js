@@ -3,7 +3,7 @@ import { makeDb } from 'mysql-async-simple';
 class Conexao {
     constructor() {
         this.connection = mysql.createConnection({
-            host     : '107.161.183.117',
+            host     : 'bd-opencomtecnologia.com.br',
             user     : 'opencomtecnologi_bd',
             password : 'bc86KxHD4XnO',
             database : 'opencomtecnologi_bd'
